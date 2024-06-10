@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:hint="Protein (grams)"
         android:inputType="numberDecimal"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp"
+        android:padding="8dp"/>
 
     <EditText
         android:id="@+id/et_carbs"
@@ -21,7 +23,9 @@
         android:layout_height="wrap_content"
         android:hint="Carbohydrates (grams)"
         android:inputType="numberDecimal"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp"
+        android:padding="8dp"/>
 
     <EditText
         android:id="@+id/et_fat"
@@ -29,7 +33,9 @@
         android:layout_height="wrap_content"
         android:hint="Fat (grams)"
         android:inputType="numberDecimal"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:minHeight="48dp"
+        android:padding="8dp"/>
 
     <Button
         android:id="@+id/btn_calculate"
@@ -43,5 +49,11 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_food_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"/>
 </LinearLayout>
